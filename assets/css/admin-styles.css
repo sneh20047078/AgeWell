@@ -1,0 +1,327 @@
+/* Admin Dashboard Theme - Shared Styles */
+:root {
+    --dark-bg: #23242a;
+    --darker-bg: #1c1c1c;
+    --primary-color: #45f3ff;
+    --primary-glow: rgba(69, 243, 255, 0.1);
+    --border-color: rgba(69, 243, 255, 0.1);
+    --text-color: #fff;
+    --muted-text: rgba(255, 255, 255, 0.7);
+    --warning-color: #ffd700;
+    --danger-color: #ff4757;
+    --success-color: #28a745;
+}
+
+/* Core Layout */
+body {
+    background: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px; /* Adjust for navbar */
+}
+
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding-top: 30px;
+    min-height: calc(100vh - 56px);
+}
+
+/* Container */
+.content-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Page Title */
+.page-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+}
+
+/* Cards */
+.content-card {
+    background: rgba(28, 28, 28, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: var(--primary-glow);
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Action Buttons */
+.action-button {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
+}
+
+.action-button.danger {
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+.action-button.danger:hover {
+    background: var(--danger-color);
+    color: var(--text-color);
+}
+
+.action-button.success {
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.action-button.success:hover {
+    background: var(--success-color);
+    color: var(--text-color);
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background: rgba(28, 28, 28, 0.6);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 10px 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem var(--primary-glow);
+    outline: none;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Table Styling */
+.table-responsive {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(28, 28, 28, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.table th {
+    background: var(--primary-glow);
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 15px;
+    text-align: left;
+    border: none;
+}
+
+.table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background: var(--primary-glow);
+}
+
+/* Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.badge-primary { background: var(--primary-color); color: var(--darker-bg); }
+.badge-warning { background: var(--warning-color); color: var(--darker-bg); }
+.badge-danger { background: var(--danger-color); color: var(--text-color); }
+.badge-success { background: var(--success-color); color: var(--text-color); }
+
+/* Alerts */
+.alert {
+    background: var(--primary-glow);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: rgba(40, 167, 69, 0.1);
+    border-color: rgba(40, 167, 69, 0.3);
+}
+
+.alert-danger {
+    background: rgba(255, 71, 87, 0.1);
+    border-color: rgba(255, 71, 87, 0.3);
+}
+
+.alert-warning {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 12px;
+    display: block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.pagination .page-link:hover {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+}
+
+.pagination .active .page-link {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Tabs */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-item {
+    margin-right: 5px;
+}
+
+.nav-tabs .nav-link {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--primary-glow);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+} 

@@ -1,0 +1,116 @@
+/* Emergency Fix for Hero Section Centering */
+
+/* !important override for all hero section elements */
+body .hero-section,
+html body .hero-section,
+#particles-js + .hero-section,
+section.hero-section,
+body section.hero-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100vh !important;
+    position: relative !important;
+    text-align: center !important;
+}
+
+/* Container elements */
+body .hero-section .container-fluid,
+body .hero-section .container,
+html body .hero-section .container-fluid,
+html body .hero-section .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* Row and column */
+body .hero-section .row,
+body .hero-section .col-12,
+body .hero-section .col,
+html body .hero-section .row,
+html body .hero-section .col-12 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Brand logo */
+body .brand-logo,
+html body .brand-logo,
+body .hero-section .brand-logo {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Logo image */
+body .site-logo,
+html body .site-logo,
+body .hero-section .site-logo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Hero text content */
+body .hero-text-content,
+html body .hero-text-content,
+body .hero-section .hero-text-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* All text elements in the hero section */
+body .hero-section h1,
+body .hero-section h2,
+body .hero-section p,
+body .hero-section .brand-name,
+body .hero-section .brand-tagline,
+html body .hero-section h1,
+html body .hero-section h2,
+html body .hero-section p {
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Button group */
+body .btn-group-hero,
+html body .btn-group-hero,
+body .hero-section .btn-group-hero {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+} 

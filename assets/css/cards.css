@@ -1,0 +1,71 @@
+/* Service Cards Styling */
+.shadow-hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(69, 243, 255, 0.1);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: #45f3ff;
+}
+
+/* Card styling that works with Bootstrap */
+.card.shadow-hover {
+    background: #28292d;
+    border: none !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card.shadow-hover .card-body {
+    padding: 2rem !important;
+}
+
+.card.shadow-hover:hover .service-icon {
+    background: rgba(69, 243, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Fix for text colors in cards */
+.card .text-primary {
+    color: #45f3ff !important;
+}
+
+.card .text-danger {
+    color: #ff4f70 !important;
+}
+
+.card .text-success {
+    color: #4fdf4f !important;
+}
+
+/* Fix for light background on cards */
+#services .card {
+    background: #28292d !important;
+    color: #fff !important;
+}
+
+#services .card .text-muted {
+    color: #adb5bd !important;
+}
+
+#services .card h3 {
+    color: #fff !important;
+} 

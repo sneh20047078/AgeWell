@@ -1,0 +1,39 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Installed dependencies and local runtime artifacts
+/vendor/
+/database/agewell.sql
+*.log
+*.pem
+*.backup
+*.bak
+/cookies.txt
+
+# Temporary diagnostics and exported reports
+/test_*.php
+/*_test.php
+/check_*.php
+/fix_*.php
+/*debug*.php
+/*_debug.php
+/diagnose_*.php
+/user_diagnostic.php
+/db_check.php
+/db_diagnose.php
+/db_report.html
+/assignments_diagnosis.html
+/senior_table_check.html
+/test_users_result.html
+/users_check.html
+/userdetails_report.html
+/add_test_users.php
+/create_test_data.php
+/direct_delete.php
+/force_delete_user.php
+/verify_twilio_credentials.php
+/email_outlook_fix.md
+/email_troubleshooting.md
+/email_templates_fix.php
